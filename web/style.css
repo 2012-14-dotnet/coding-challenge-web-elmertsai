@@ -46,12 +46,16 @@ html, body {
      */
     flex-flow: row wrap;
     
+    
     /* Then we define how is distributed the remaining space */
     justify-content: space-around;
     
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+  .header {
+    margin-top: 5%;
   }
   
   .flex-item {
@@ -73,22 +77,16 @@ html, body {
     height: 100%;
     position: relative;
   }
-  
-  .left-column {
-    position:fixed; 
-    /* display:flex;
-    flex:0 0 20vw;
-    min-height:100%; */
-    top:0;
-    left:0;
-    width:30%;
-    height:100%;
-    background:whitesmoke;
+
+
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
   }
   
-
-  .right-column {
-    margin-left:30%;
-    background:whitesmoke;
-    min-height:100%;  /* <-- fixes the background-color issue when content grows */
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
   }
