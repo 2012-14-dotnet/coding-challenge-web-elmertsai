@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background:whitesmoke
+  }
+  * {
+    box-sizing: border-box; 
+  }
+  .container {
+    display: flex; /* or inline-flex */
+    justify-content: center;
+  }
+  .menu {
+    width: 25%;
+    float: left;
+  }
+  .main {
+    width: 75%;
+    float: left;
+  }
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  li { list-style-type: none;}
+  
+
+  .flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .header {
+    margin-top: 5%;
+  }
+  
+  .flex-item {
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+
+
+
+
+  .page-wrapper {
+    height: 100%;
+    position: relative;
+  }
+
+
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
